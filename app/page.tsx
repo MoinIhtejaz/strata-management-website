@@ -1,4 +1,3 @@
-
 'use client';
 import Image from 'next/image';
 import '../public/styles.css'; // Import your custom CSS
