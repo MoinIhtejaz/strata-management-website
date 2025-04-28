@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white p-8">
+    <main className="min-h-screen bg-gray-900 text-white p-8">
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Strata Management Committee</h1>
         <p className="text-lg text-gray-300">
@@ -53,3 +53,4 @@ export default function Home() {
     </main>
   );
 }
+
