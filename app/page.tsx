@@ -42,7 +42,7 @@ export default function Home() {
           href="/levy-guide.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 underline"
+          className="text-blue-600 underline hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
         >
           Download the Levy Guide (PDF)
           <span className="sr-only"> (opens in a new tab)</span>
