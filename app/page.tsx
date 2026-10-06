@@ -4,6 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900 p-8">
+      <div className="mx-auto max-w-3xl">
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Strata Management Committee</h1>
         <p className="text-lg">
@@ -51,6 +52,7 @@ export default function Home() {
       <footer className="text-center mt-12 text-sm text-gray-600">
         <p>Deployed on Vercel | Source on GitHub</p>
       </footer>
+      </div>
     </main>
   );
 }
