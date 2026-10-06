@@ -28,7 +28,7 @@ export default function Home() {
           alt="Strata Management Team"
           width={600}
           height={400}
-          className="rounded-xl shadow"
+          className="rounded-xl shadow h-auto w-full max-w-[600px]"
         />
       </section>
 
