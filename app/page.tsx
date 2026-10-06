@@ -44,6 +44,7 @@ export default function Home() {
           className="text-blue-600 underline"
         >
           Download the Levy Guide (PDF)
+          <span className="sr-only"> (opens in a new tab)</span>
         </a>
       </section>
 
