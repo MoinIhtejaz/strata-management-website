@@ -14,12 +14,24 @@ export default function Home() {
 
       <section aria-labelledby="committee-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
         <h2 id="committee-heading" className="text-2xl font-semibold mb-4">Our Committee</h2>
-        <ul className="space-y-2">
-          <li><strong>Chairperson:</strong> Jane Doe</li>
-          <li><strong>Treasurer:</strong> John Smith</li>
-          <li><strong>Secretary:</strong> Alice Johnson</li>
-          <li><strong>Member:</strong> Bob Williams</li>
-        </ul>
+        <dl className="space-y-2">
+          <div className="flex gap-2">
+            <dt className="font-semibold">Chairperson:</dt>
+            <dd>Jane Doe</dd>
+          </div>
+          <div className="flex gap-2">
+            <dt className="font-semibold">Treasurer:</dt>
+            <dd>John Smith</dd>
+          </div>
+          <div className="flex gap-2">
+            <dt className="font-semibold">Secretary:</dt>
+            <dd>Alice Johnson</dd>
+          </div>
+          <div className="flex gap-2">
+            <dt className="font-semibold">Member:</dt>
+            <dd>Bob Williams</dd>
+          </div>
+        </dl>
       </section>
 
       <section aria-labelledby="team-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
