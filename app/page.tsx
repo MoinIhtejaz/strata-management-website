@@ -12,8 +12,8 @@ export default function Home() {
         </p>
       </header>
 
-      <section className="bg-white rounded-xl p-6 shadow-md mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Our Committee</h2>
+      <section aria-labelledby="committee-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
+        <h2 id="committee-heading" className="text-2xl font-semibold mb-4">Our Committee</h2>
         <ul className="space-y-2">
           <li><strong>Chairperson:</strong> Jane Doe</li>
           <li><strong>Treasurer:</strong> John Smith</li>
@@ -22,8 +22,8 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="bg-white rounded-xl p-6 shadow-md mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Meet the Team</h2>
+      <section aria-labelledby="team-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
+        <h2 id="team-heading" className="text-2xl font-semibold mb-4">Meet the Team</h2>
         <Image
           src="/management-team.jpeg"
           alt="Strata Management Team"
@@ -33,8 +33,8 @@ export default function Home() {
         />
       </section>
 
-      <section className="bg-white rounded-xl p-6 shadow-md">
-        <h2 className="text-2xl font-semibold mb-4">What We Do</h2>
+      <section aria-labelledby="whatwedo-heading" className="bg-white rounded-xl p-6 shadow-md">
+        <h2 id="whatwedo-heading" className="text-2xl font-semibold mb-4">What We Do</h2>
         <p className="mb-4">
           The committee oversees building maintenance, financial management, and communication with residents. Levies are collected for administration and capital works to maintain property value and safety.
         </p>
