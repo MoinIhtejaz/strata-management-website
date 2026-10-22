@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-50 text-gray-900 p-4 sm:p-8">
       <div className="mx-auto max-w-3xl">
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Strata Management Committee</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
         <p className="text-lg">
           Supporting the residents and maintaining our shared spaces in accordance with the Strata Schemes Management Act (2015)
         </p>
