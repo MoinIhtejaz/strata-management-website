@@ -2,8 +2,15 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 p-4 sm:p-8">
-      <div className="mx-auto max-w-3xl">
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-blue-600 focus:shadow-md focus:outline-2 focus:outline-offset-2 focus:outline-blue-600"
+      >
+        Skip to main content
+      </a>
+      <main id="main-content" className="min-h-screen bg-gray-50 text-gray-900 p-4 sm:p-8">
+        <div className="mx-auto max-w-3xl">
       <header className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
         <p className="text-lg">
@@ -68,7 +75,8 @@ export default function Home() {
           Source on GitHub
         </p>
       </footer>
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 }
