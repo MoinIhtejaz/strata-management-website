@@ -62,7 +62,11 @@ export default function Home() {
       </section>
 
       <footer className="text-center mt-12 text-sm text-gray-600">
-        <p>Deployed on Vercel | Source on GitHub</p>
+        <p>
+          Deployed on Vercel
+          <span aria-hidden="true" className="px-2">|</span>
+          Source on GitHub
+        </p>
       </footer>
       </div>
     </main>
