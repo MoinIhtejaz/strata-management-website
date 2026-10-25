@@ -13,7 +13,7 @@ export default function Home() {
         <main id="main-content" className="mx-auto max-w-3xl">
       <header className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
-        <p className="text-lg">
+        <p className="text-lg max-w-prose mx-auto">
           Supporting the residents and maintaining our shared spaces in accordance with the Strata Schemes Management Act (2015)
         </p>
       </header>
