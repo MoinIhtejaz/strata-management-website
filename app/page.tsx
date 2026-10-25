@@ -9,8 +9,8 @@ export default function Home() {
       >
         Skip to main content
       </a>
-      <main id="main-content" className="min-h-screen bg-gray-50 text-gray-900 p-4 sm:p-8">
-        <div className="mx-auto max-w-3xl">
+      <div className="min-h-screen bg-gray-50 text-gray-900 p-4 sm:p-8">
+        <main id="main-content" className="mx-auto max-w-3xl">
       <header className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
         <p className="text-lg">
@@ -68,15 +68,15 @@ export default function Home() {
         </a>
       </section>
 
-      <footer className="text-center mt-12 text-sm text-gray-600">
-        <p>
-          Deployed on Vercel
-          <span aria-hidden="true" className="px-2">|</span>
-          Source on GitHub
-        </p>
-      </footer>
-        </div>
-      </main>
+        </main>
+        <footer className="mx-auto max-w-3xl text-center mt-12 text-sm text-gray-600">
+          <p>
+            Deployed on Vercel
+            <span aria-hidden="true" className="px-2">|</span>
+            Source on GitHub
+          </p>
+        </footer>
+      </div>
     </>
   );
 }
