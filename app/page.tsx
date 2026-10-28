@@ -1,5 +1,12 @@
 import Image from 'next/image';
 
+const committee = [
+  { role: 'Chairperson', name: 'Jane Doe' },
+  { role: 'Treasurer', name: 'John Smith' },
+  { role: 'Secretary', name: 'Alice Johnson' },
+  { role: 'Member', name: 'Bob Williams' },
+];
+
 export default function Home() {
   return (
     <>
@@ -21,22 +28,12 @@ export default function Home() {
       <section aria-labelledby="committee-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
         <h2 id="committee-heading" className="text-2xl font-semibold mb-4">Our Committee</h2>
         <dl className="space-y-2">
-          <div className="flex gap-2">
-            <dt className="font-semibold">Chairperson:</dt>
-            <dd>Jane Doe</dd>
-          </div>
-          <div className="flex gap-2">
-            <dt className="font-semibold">Treasurer:</dt>
-            <dd>John Smith</dd>
-          </div>
-          <div className="flex gap-2">
-            <dt className="font-semibold">Secretary:</dt>
-            <dd>Alice Johnson</dd>
-          </div>
-          <div className="flex gap-2">
-            <dt className="font-semibold">Member:</dt>
-            <dd>Bob Williams</dd>
-          </div>
+          {committee.map(({ role, name }) => (
+            <div key={role} className="flex gap-2">
+              <dt className="font-semibold">{role}:</dt>
+              <dd>{name}</dd>
+            </div>
+          ))}
         </dl>
       </section>
 
