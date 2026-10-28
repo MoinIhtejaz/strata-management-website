@@ -7,6 +7,24 @@ const committee = [
   { role: 'Member', name: 'Bob Williams' },
 ];
 
+function Section({
+  title,
+  className = '',
+  children,
+}: {
+  title: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  const headingId = `${title.toLowerCase().replace(/\s+/g, '-')}-heading`;
+  return (
+    <section aria-labelledby={headingId} className={`bg-white rounded-xl p-6 shadow-md ${className}`}>
+      <h2 id={headingId} className="text-2xl font-semibold mb-4">{title}</h2>
+      {children}
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -25,8 +43,7 @@ export default function Home() {
         </p>
       </header>
 
-      <section aria-labelledby="committee-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
-        <h2 id="committee-heading" className="text-2xl font-semibold mb-4">Our Committee</h2>
+      <Section title="Our Committee" className="mb-12">
         <dl className="space-y-2">
           {committee.map(({ role, name }) => (
             <div key={role} className="flex gap-2">
@@ -35,10 +52,9 @@ export default function Home() {
             </div>
           ))}
         </dl>
-      </section>
+      </Section>
 
-      <section aria-labelledby="team-heading" className="bg-white rounded-xl p-6 shadow-md mb-12">
-        <h2 id="team-heading" className="text-2xl font-semibold mb-4">Meet the Team</h2>
+      <Section title="Meet the Team" className="mb-12">
         <Image
           src="/management-team.jpeg"
           alt="Strata Management Team"
@@ -47,10 +63,9 @@ export default function Home() {
           sizes="(max-width: 640px) 100vw, 600px"
           className="rounded-xl shadow h-auto w-full max-w-[600px]"
         />
-      </section>
+      </Section>
 
-      <section aria-labelledby="whatwedo-heading" className="bg-white rounded-xl p-6 shadow-md">
-        <h2 id="whatwedo-heading" className="text-2xl font-semibold mb-4">What We Do</h2>
+      <Section title="What We Do">
         <p className="mb-4">
           The committee oversees building maintenance, financial management, and communication with residents. Levies are collected for administration and capital works to maintain property value and safety.
         </p>
@@ -63,7 +78,7 @@ export default function Home() {
           Download the Levy Guide (PDF)
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
-      </section>
+      </Section>
 
         </main>
         <footer className="mx-auto max-w-3xl text-center mt-12 text-sm text-gray-600">
