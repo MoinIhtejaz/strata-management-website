@@ -73,7 +73,7 @@ export default function Home() {
           href="/levy-guide.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-blue-600 underline hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
+          className="inline-flex items-center gap-1 text-blue-600 underline transition-colors hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
         >
           Download the Levy Guide (PDF)
           <svg
