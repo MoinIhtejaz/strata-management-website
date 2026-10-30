@@ -61,7 +61,7 @@ export default function Home() {
           width={600}
           height={338}
           sizes="(max-width: 640px) 100vw, 600px"
-          className="rounded-xl shadow h-auto w-full max-w-[600px]"
+          className="rounded-xl h-auto w-full max-w-[600px]"
         />
       </Section>
 
