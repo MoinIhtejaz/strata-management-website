@@ -100,7 +100,15 @@ export default function Home() {
           <p>
             Deployed on Vercel
             <span aria-hidden="true" className="px-2">|</span>
-            Source on GitHub
+            <a
+              href="https://github.com/MoinIhtejaz/strata-management-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition-colors hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
+            >
+              Source on GitHub
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
           </p>
         </footer>
       </div>
