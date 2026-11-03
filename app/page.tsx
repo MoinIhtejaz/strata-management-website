@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Image from 'next/image';
 
 const committee = [
@@ -44,12 +45,12 @@ export default function Home() {
       </header>
 
       <Section title="Our Committee" className="mb-12">
-        <dl className="space-y-2">
+        <dl className="grid grid-cols-[max-content_1fr] gap-x-4 gap-y-2">
           {committee.map(({ role, name }) => (
-            <div key={role} className="flex gap-2">
-              <dt className="font-semibold">{role}:</dt>
+            <Fragment key={role}>
+              <dt className="font-semibold">{role}</dt>
               <dd>{name}</dd>
-            </div>
+            </Fragment>
           ))}
         </dl>
       </Section>
