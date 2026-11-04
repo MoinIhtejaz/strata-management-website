@@ -26,6 +26,23 @@ function Section({
   );
 }
 
+function ExternalLink({
+  href,
+  className = '',
+  children,
+}: {
+  href: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      {children}
+      <span className="sr-only"> (opens in a new tab)</span>
+    </a>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -70,10 +87,8 @@ export default function Home() {
         <p className="mb-4">
           The committee oversees building maintenance, financial management, and communication with residents. Levies are collected for administration and capital works to maintain property value and safety.
         </p>
-        <a
+        <ExternalLink
           href="/levy-guide.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-blue-600 underline transition-colors hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
         >
           Download the Levy Guide (PDF)
@@ -91,8 +106,7 @@ export default function Home() {
             <path d="M10 14 21 3" />
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
           </svg>
-          <span className="sr-only"> (opens in a new tab)</span>
-        </a>
+        </ExternalLink>
       </Section>
 
         </main>
@@ -100,15 +114,12 @@ export default function Home() {
           <p>
             Deployed on Vercel
             <span aria-hidden="true" className="px-2">|</span>
-            <a
+            <ExternalLink
               href="https://github.com/MoinIhtejaz/strata-management-website"
-              target="_blank"
-              rel="noopener noreferrer"
               className="underline transition-colors hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
             >
               Source on GitHub
-              <span className="sr-only"> (opens in a new tab)</span>
-            </a>
+            </ExternalLink>
           </p>
         </footer>
       </div>
