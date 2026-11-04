@@ -19,7 +19,7 @@ function Section({
 }) {
   const headingId = `${title.toLowerCase().replace(/\s+/g, '-')}-heading`;
   return (
-    <section aria-labelledby={headingId} className={`bg-white rounded-xl p-6 shadow-md ${className}`}>
+    <section aria-labelledby={headingId} className={`bg-white rounded-xl p-6 sm:p-8 shadow-md ${className}`}>
       <h2 id={headingId} className="text-2xl font-semibold mb-4">{title}</h2>
       {children}
     </section>
