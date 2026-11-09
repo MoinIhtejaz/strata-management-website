@@ -100,7 +100,7 @@ export default function Home() {
             strokeLinecap="round"
             strokeLinejoin="round"
             aria-hidden="true"
-            className="h-4 w-4"
+            className="h-4 w-4 shrink-0"
           >
             <path d="M15 3h6v6" />
             <path d="M10 14 21 3" />
