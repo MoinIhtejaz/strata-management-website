@@ -84,7 +84,7 @@ export default function Home() {
       </Section>
 
       <Section title="What We Do">
-        <p className="mb-4">
+        <p className="mb-4 max-w-prose">
           The committee oversees building maintenance, financial management, and communication with residents. Levies are collected for administration and capital works to maintain property value and safety.
         </p>
         <ExternalLink
