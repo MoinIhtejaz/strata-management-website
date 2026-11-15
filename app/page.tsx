@@ -78,7 +78,7 @@ export default function Home() {
           alt="Strata Management Team"
           width={600}
           height={338}
-          sizes="(max-width: 640px) 100vw, 600px"
+          sizes="(max-width: 640px) calc(100vw - 80px), 600px"
           className="rounded-xl h-auto w-full max-w-[600px] bg-gray-100"
         />
       </Section>
