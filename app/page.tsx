@@ -35,8 +35,15 @@ function ExternalLink({
   className?: string;
   children: React.ReactNode;
 }) {
+  const baseClassName =
+    'underline transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600';
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${baseClassName} ${className}`.trim()}
+    >
       {children}
       <span className="sr-only"> (opens in a new tab)</span>
     </a>
@@ -89,7 +96,7 @@ export default function Home() {
         </p>
         <ExternalLink
           href="/levy-guide.pdf"
-          className="inline-flex items-center gap-1 text-blue-600 underline transition-colors hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
+          className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800"
         >
           Download the Levy Guide (PDF)
           <svg
@@ -116,7 +123,7 @@ export default function Home() {
             <span aria-hidden="true" className="px-2">|</span>
             <ExternalLink
               href="https://github.com/MoinIhtejaz/strata-management-website"
-              className="underline transition-colors hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 rounded-sm"
+              className="hover:text-gray-900"
             >
               Source on GitHub
             </ExternalLink>
