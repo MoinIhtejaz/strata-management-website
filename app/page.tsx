@@ -62,7 +62,7 @@ export default function Home() {
       <div className="flex min-h-screen flex-col bg-gray-100 text-gray-900 p-4 sm:p-8">
         <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-3xl flex-1 focus:outline-none">
       <header className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Strata Management Committee</h1>
         <p className="text-lg text-gray-600 max-w-prose mx-auto text-pretty">
           Supporting the residents and maintaining our shared spaces in accordance with the Strata Schemes Management Act (2015)
         </p>
