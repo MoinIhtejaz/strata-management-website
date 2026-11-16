@@ -59,8 +59,8 @@ export default function Home() {
       >
         Skip to main content
       </a>
-      <div className="min-h-screen bg-gray-100 text-gray-900 p-4 sm:p-8">
-        <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl focus:outline-none">
+      <div className="flex min-h-screen flex-col bg-gray-100 text-gray-900 p-4 sm:p-8">
+        <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-3xl flex-1 focus:outline-none">
       <header className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
         <p className="text-lg text-gray-600 max-w-prose mx-auto text-pretty">
