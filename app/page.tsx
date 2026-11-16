@@ -63,7 +63,7 @@ export default function Home() {
         <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl focus:outline-none">
       <header className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Strata Management Committee</h1>
-        <p className="text-lg text-gray-600 max-w-prose mx-auto">
+        <p className="text-lg text-gray-600 max-w-prose mx-auto text-pretty">
           Supporting the residents and maintaining our shared spaces in accordance with the Strata Schemes Management Act (2015)
         </p>
       </header>
@@ -91,7 +91,7 @@ export default function Home() {
       </Section>
 
       <Section title="What We Do">
-        <p className="mb-4 max-w-prose">
+        <p className="mb-4 max-w-prose text-pretty">
           The committee oversees building maintenance, financial management, and communication with residents. Levies are collected for administration and capital works to maintain property value and safety.
         </p>
         <ExternalLink
